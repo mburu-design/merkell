@@ -21,7 +21,7 @@ const WhatsAppFloat = () => {
             Hi there! How can we help you today? Send us a message and we'll get back to you shortly.
           </p>
           <a 
-            href="https://wa.me/254701403428?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
+            href="https://wa.me/254748324896?text=Hi%20Merkell%20Group!%20I'm%20interested%20in%20your%20services."
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full text-center px-4 py-2 bg-[#25D366] text-white rounded-lg hover:bg-[#20b358] transition-colors font-medium"

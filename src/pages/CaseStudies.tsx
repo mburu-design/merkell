@@ -125,57 +125,18 @@ const CaseStudies = () => {
   return (
     <div className="pt-32">
       {/* Hero Section */}
-      <section className="relative py-32 overflow-hidden">
-        {/* Video Background */}
-        <div className="absolute inset-0">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source src="https://videos.pexels.com/video-files/3209828/3209828-uhd_2560_1440_25fps.mp4" type="video/mp4" />
-            {/* Fallback background */}
-            <div className="w-full h-full bg-gradient-to-br from-[#000080] to-[#007BFF]"></div>
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#000080]/70 to-[#007BFF]/70"></div>
-        </div>
-        
-        {/* Success Metrics Floating */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-12 animate-float">
-            <div className="bg-white/20 backdrop-blur-sm rounded-lg p-3 border border-white/30">
-              <div className="text-white font-bold text-lg">500+</div>
-              <div className="text-white/80 text-xs">Projects</div>
-            </div>
-          </div>
-          <div className="absolute top-32 right-16 animate-float" style={{animationDelay: '1s'}}>
-            <div className="bg-white/20 backdrop-blur-sm rounded-lg p-3 border border-white/30">
-              <div className="text-white font-bold text-lg">98%</div>
-              <div className="text-white/80 text-xs">Success</div>
-            </div>
-          </div>
-          <div className="absolute bottom-32 left-1/4 animate-float" style={{animationDelay: '2s'}}>
-            <div className="bg-white/20 backdrop-blur-sm rounded-lg p-3 border border-white/30">
-              <div className="text-white font-bold text-lg">300%</div>
-              <div className="text-white/80 text-xs">Avg ROI</div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Glass Overlay Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-3xl p-12 text-center text-white hover:bg-white/15 transition-all duration-500">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-shadow-lg animate-fadeInUp">
+      <section className="relative py-32 bg-[#000080]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Case Studies
             </h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/90 animate-slideInLeft" style={{animationDelay: '0.3s'}}>
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/90">
               Real results from real businesses. Discover how we've helped companies transform and grow.
             </p>
-            <div className="mt-8 animate-slideInRight" style={{animationDelay: '0.6s'}}>
-              <div className="inline-flex items-center space-x-2 px-6 py-3 bg-white/20 rounded-full backdrop-blur-sm">
-                <TrendingUp className="w-5 h-5 text-green-400" />
+            <div className="mt-8">
+              <div className="inline-flex items-center space-x-2 px-6 py-3 bg-[#DC3545] rounded-full">
+                <TrendingUp className="w-5 h-5 text-white" />
                 <span className="text-white font-medium">Proven Success Stories</span>
               </div>
             </div>

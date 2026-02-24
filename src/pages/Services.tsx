@@ -142,57 +142,24 @@ const Services = () => {
   return (
     <div className="pt-32">
       {/* Hero Section */}
-      <section className="relative py-32 overflow-hidden">
-        {/* Video Background */}
-        <div className="absolute inset-0">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source src="https://videos.pexels.com/video-files/3130284/3130284-uhd_2560_1440_25fps.mp4" type="video/mp4" />
-            {/* Fallback background */}
-            <div className="w-full h-full bg-gradient-to-br from-[#000080] to-[#007BFF]"></div>
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#000080]/75 to-[#007BFF]/65"></div>
-        </div>
-        
-        {/* Creative Floating Icons */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-24 left-16 animate-float">
-            <Globe className="w-8 h-8 text-white/30" />
-          </div>
-          <div className="absolute top-32 right-24 animate-float" style={{animationDelay: '1s'}}>
-            <Target className="w-6 h-6 text-white/30" />
-          </div>
-          <div className="absolute bottom-40 left-1/4 animate-float" style={{animationDelay: '2s'}}>
-            <Palette className="w-7 h-7 text-white/30" />
-          </div>
-          <div className="absolute bottom-28 right-1/3 animate-float" style={{animationDelay: '0.5s'}}>
-            <Bot className="w-8 h-8 text-white/30" />
-          </div>
-        </div>
-        
-        {/* Glass Overlay Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-3xl p-12 text-center text-white hover:bg-white/15 transition-all duration-500">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-shadow-lg animate-fadeInUp">
+      <section className="relative py-32 bg-[#000080]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white">
+            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6">
               Our Services
             </h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/90 animate-slideInLeft" style={{animationDelay: '0.3s'}}>
+            <p className="font-body text-xl md:text-2xl max-w-3xl mx-auto text-white/90">
               Comprehensive digital solutions designed to accelerate your business growth and maximize your online potential.
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4 animate-slideInRight" style={{animationDelay: '0.6s'}}>
-              <div className="px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm">
-                <span className="text-white font-medium">6 Core Services</span>
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
+              <div className="px-4 py-2 bg-[#DC3545] rounded-full">
+                <span className="font-body text-white font-medium">6 Core Services</span>
               </div>
-              <div className="px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm">
-                <span className="text-white font-medium">500+ Projects</span>
+              <div className="px-4 py-2 bg-[#007BFF] rounded-full">
+                <span className="font-body text-white font-medium">500+ Projects</span>
               </div>
-              <div className="px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm">
-                <span className="text-white font-medium">98% Success Rate</span>
+              <div className="px-4 py-2 bg-[#333333] rounded-full">
+                <span className="font-body text-white font-medium">98% Success Rate</span>
               </div>
             </div>
           </div>

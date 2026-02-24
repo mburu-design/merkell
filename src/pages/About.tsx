@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Target, Eye, Heart, Users, Award, Globe, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Target, Eye, Heart, Users, Award, Globe } from 'lucide-react';
 
 const About = () => {
   const values = [
@@ -54,43 +54,17 @@ const About = () => {
   return (
     <div className="pt-32">
       {/* Hero Section */}
-      <section className="relative py-32 overflow-hidden">
-        {/* Video Background */}
-        <div className="absolute inset-0">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source src="https://videos.pexels.com/video-files/3196284/3196284-uhd_2560_1440_25fps.mp4" type="video/mp4" />
-            {/* Fallback background */}
-            <div className="w-full h-full bg-gradient-to-br from-[#000080] to-[#007BFF]"></div>
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#000080]/80 to-[#007BFF]/60"></div>
-        </div>
-        
-        {/* Floating Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-10 w-20 h-20 border-2 border-white/20 rounded-full animate-float"></div>
-          <div className="absolute top-40 right-20 w-16 h-16 border-2 border-white/20 rounded-lg rotate-45 animate-float" style={{animationDelay: '1s'}}></div>
-          <div className="absolute bottom-32 left-1/4 w-12 h-12 border-2 border-white/20 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
-          <div className="absolute bottom-20 right-1/3 w-24 h-24 border-2 border-white/20 rounded-lg rotate-12 animate-float" style={{animationDelay: '0.5s'}}></div>
-        </div>
-        
-        {/* Glass Overlay Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-3xl p-12 text-center text-white hover:bg-white/15 transition-all duration-500">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-shadow-lg animate-fadeInUp">
+      <section className="relative py-32 bg-[#000080]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
               About Merkell Group
             </h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/90 animate-slideInLeft" style={{animationDelay: '0.3s'}}>
-              Empowering businesses through innovative digital solutions and strategic consulting since 2015.
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/90">
+              We are a dedicated digital consultancy helping businesses grow, adapt, and succeed in today's fast-paced world. At Merkel Consulting, we blend creativity, strategy, and technology to deliver impactful solutions.
             </p>
-            <div className="mt-8 animate-slideInRight" style={{animationDelay: '0.6s'}}>
-              <div className="inline-flex items-center space-x-2 px-6 py-3 bg-white/20 rounded-full backdrop-blur-sm">
-                <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse-slow"></span>
+            <div className="mt-8">
+              <div className="inline-flex items-center space-x-2 px-6 py-3 bg-[#DC3545] rounded-full">
                 <span className="text-white font-medium">Transforming Businesses Since 2015</span>
               </div>
             </div>
@@ -109,7 +83,7 @@ const About = () => {
                   <h2 className="text-3xl font-bold text-[#333333]">Our Mission</h2>
                 </div>
                 <p className="text-lg text-[#666666] leading-relaxed">
-                  Turning marketing into unforgettable results and lasting impact worldwide. We craft strategic marketing that delivers measurable results while combining professionalism, creativity, and precision to build brands that audiences remember for years.
+                  Marketing into unforgettable results and lasting impact worldwide.
                 </p>
               </div>
 
@@ -119,15 +93,15 @@ const About = () => {
                   <h2 className="text-3xl font-bold text-[#333333]">Our Vision</h2>
                 </div>
                 <p className="text-lg text-[#666666] leading-relaxed">
-                  Helping brands thrive, inspire, and dominate globally. We turn visibility into influence, and influence into growth, creating timeless impact that transcends trends.
+                  Brands thrive, inspire, and dominate globally.
                 </p>
               </div>
             </div>
             
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                alt="Team collaboration" 
+                src="/merkel consulation.jpg" 
+                alt="Merkell Group Consultation" 
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[#007BFF] rounded-full flex items-center justify-center">
@@ -146,8 +120,7 @@ const About = () => {
               Our Story
             </h2>
             <p className="text-xl text-[#666666] max-w-3xl mx-auto">
-              From a small startup to a global consulting firm, our journey has been driven by passion, 
-              innovation, and an unwavering commitment to client success.
+              At Merkell Group Consulting, we don't chase trends—we craft strategic marketing that delivers measurable results and lasting impact. Every campaign is treated like a launch, combining professionalism, creativity, and precision to build brands that audiences remember for years.
             </p>
           </div>
           

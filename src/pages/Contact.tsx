@@ -35,20 +35,20 @@ const Contact = () => {
   const departments = [
     {
       title: 'General Inquiries',
-      email: 'info@merkellgroup.com',
-      phone: '+254701403428',
+      email: 'merccykmwende@gmail.com',
+      phone: '0748 324 896',
       description: 'For general questions and information about our services.'
     },
     {
       title: 'Sales & Partnerships',
-      email: 'sales@merkellgroup.com',
-      phone: '+254701403428',
+      email: 'kmwendwa692@gmail.com',
+      phone: '0113 528 252',
       description: 'Ready to start a project or explore partnership opportunities.'
     },
     {
       title: 'Technical Support',
-      email: 'support@merkellgroup.com',
-      phone: '+254701403428',
+      email: 'merccykmwende@gmail.com',
+      phone: '0748 324 896',
       description: 'Need help with an existing project or technical assistance.'
     }
   ];
@@ -78,48 +78,17 @@ const Contact = () => {
   return (
     <div className="pt-32">
       {/* Hero Section */}
-      <section className="relative py-32 overflow-hidden">
-        {/* Video Background */}
-        <div className="absolute inset-0">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source src="https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4" type="video/mp4" />
-            {/* Fallback background */}
-            <div className="w-full h-full bg-gradient-to-br from-[#000080] to-[#007BFF]"></div>
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#000080]/80 to-[#007BFF]/60"></div>
-        </div>
-        
-        {/* Communication Icons Floating */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-16 animate-float">
-            <Phone className="w-8 h-8 text-white/30" />
-          </div>
-          <div className="absolute top-36 right-20 animate-float" style={{animationDelay: '1s'}}>
-            <Mail className="w-7 h-7 text-white/30" />
-          </div>
-          <div className="absolute bottom-32 left-1/4 animate-float" style={{animationDelay: '2s'}}>
-            <MessageCircle className="w-6 h-6 text-white/30" />
-          </div>
-        </div>
-        
-        {/* Glass Overlay Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-3xl p-12 text-center text-white hover:bg-white/15 transition-all duration-500">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-shadow-lg animate-fadeInUp">
+      <section className="relative py-32 bg-[#000080]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Get In Touch
             </h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/90 animate-slideInLeft" style={{animationDelay: '0.3s'}}>
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/90">
               Ready to transform your business? Let's discuss your project and create a custom solution that drives results.
             </p>
-            <div className="mt-8 animate-slideInRight" style={{animationDelay: '0.6s'}}>
-              <div className="inline-flex items-center space-x-2 px-6 py-3 bg-white/20 rounded-full backdrop-blur-sm">
-                <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse-slow"></span>
+            <div className="mt-8">
+              <div className="inline-flex items-center space-x-2 px-6 py-3 bg-[#DC3545] rounded-full">
                 <span className="text-white font-medium">Available 24/7</span>
               </div>
             </div>

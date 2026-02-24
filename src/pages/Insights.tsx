@@ -123,59 +123,23 @@ const Insights = () => {
   return (
     <div className="pt-32">
       {/* Hero Section */}
-      <section className="relative py-32 overflow-hidden">
-        {/* Video Background */}
-        <div className="absolute inset-0">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source src="https://videos.pexels.com/video-files/3191836/3191836-uhd_2560_1440_25fps.mp4" type="video/mp4" />
-            {/* Fallback background */}
-            <div className="w-full h-full bg-gradient-to-br from-[#000080] to-[#007BFF]"></div>
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#000080]/75 to-[#007BFF]/65"></div>
-        </div>
-        
-        {/* Knowledge Icons Floating */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-24 left-20 animate-float">
-            <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/30">
-              <span className="text-white font-bold">AI</span>
-            </div>
-          </div>
-          <div className="absolute top-40 right-24 animate-float" style={{animationDelay: '1s'}}>
-            <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center backdrop-blur-sm border border-white/30">
-              <span className="text-white font-bold text-sm">SEO</span>
-            </div>
-          </div>
-          <div className="absolute bottom-40 left-1/4 animate-float" style={{animationDelay: '2s'}}>
-            <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/30">
-              <span className="text-white font-bold text-xs">TRENDS</span>
-            </div>
-          </div>
-        </div>
-        
-        {/* Glass Overlay Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-3xl p-12 text-center text-white hover:bg-white/15 transition-all duration-500">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-shadow-lg animate-fadeInUp">
+      <section className="relative py-32 bg-[#000080]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Insights & Resources
             </h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/90 animate-slideInLeft" style={{animationDelay: '0.3s'}}>
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/90">
               Stay ahead with the latest trends, strategies, and insights in digital marketing and business growth.
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4 animate-slideInRight" style={{animationDelay: '0.6s'}}>
-              <div className="px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm">
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
+              <div className="px-4 py-2 bg-[#DC3545] rounded-full">
                 <span className="text-white font-medium">Latest Trends</span>
               </div>
-              <div className="px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm">
+              <div className="px-4 py-2 bg-[#007BFF] rounded-full">
                 <span className="text-white font-medium">Expert Insights</span>
               </div>
-              <div className="px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm">
+              <div className="px-4 py-2 bg-[#333333] rounded-full">
                 <span className="text-white font-medium">Industry News</span>
               </div>
             </div>
