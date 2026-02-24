@@ -65,21 +65,39 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      company: 'TechStart Inc.',
-      content: 'Merkel Consulting transformed our digital presence completely. Our revenue increased by 300% in just 6 months.',
+      name: 'Bonville Energy',
+      company: 'Energy Sector',
+      content: 'Merkell Group\'s strategic marketing transformed our brand visibility. Their commitment to measurable results and professional excellence has been invaluable to our growth.',
       rating: 5
     },
     {
-      name: 'Michael Chen',
-      company: 'Global Retail Co.',
-      content: 'The team\'s expertise in digital marketing helped us reach new markets we never thought possible.',
+      name: 'Wisepaths Tax Consultants',
+      company: 'Professional Services',
+      content: 'Working with Merkell Group was exceptional. They treated every campaign like a major launch, delivering unforgettable results that resonate with our audience.',
       rating: 5
     },
     {
-      name: 'Emily Rodriguez',
-      company: 'Creative Agency',
-      content: 'Outstanding service and results. They truly understand what it takes to succeed in today\'s digital landscape.',
+      name: 'Mila Honey & Peanut Butter',
+      company: 'Food & Beverage',
+      content: 'Merkell Group turned our visibility into influence and influence into tangible growth. Their precision and creativity are unmatched.',
+      rating: 5
+    },
+    {
+      name: 'Usahili Arts',
+      company: 'Creative Industry',
+      content: 'The team at Merkell Group combines strategy, creativity, and professionalism seamlessly. Our brand now dominates our market.',
+      rating: 5
+    },
+    {
+      name: 'Melina Business & Tax Consultants',
+      company: 'Professional Services',
+      content: 'Exceptional service and lasting impact. Merkell Group\'s results-oriented approach has significantly boosted our engagement and sales.',
+      rating: 5
+    },
+    {
+      name: 'Ochwada Financial Consultants',
+      company: 'Financial Services',
+      content: 'Every interaction with Merkell Group feels like a major product launch. Their attention to detail and commitment to excellence is remarkable.',
       rating: 5
     }
   ];
@@ -311,7 +329,7 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-[#F8F8F8] rounded-xl p-8 hover:shadow-lg transition-shadow duration-300">
                 <div className="flex items-center mb-4">

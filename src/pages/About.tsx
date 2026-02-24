@@ -6,23 +6,33 @@ const About = () => {
   const values = [
     {
       icon: Target,
-      title: 'Excellence',
-      description: 'We strive for excellence in every project, delivering solutions that exceed expectations.'
+      title: 'Strategic Thinking',
+      description: 'Every campaign is planned with measurable goals and long-term brand growth in mind.'
     },
     {
       icon: Heart,
-      title: 'Integrity',
-      description: 'We build trust through transparency, honesty, and ethical business practices.'
+      title: 'Timeless Impact',
+      description: 'Not chasing trends, but creating messaging, visuals, and experiences that remain relevant for years.'
     },
     {
-      icon: Users,
-      title: 'Collaboration',
-      description: 'We believe in the power of teamwork and close partnership with our clients.'
+      icon: Award,
+      title: 'Professional Excellence',
+      description: 'Upholding the highest standards in client service and execution.'
     },
     {
       icon: Globe,
-      title: 'Innovation',
-      description: 'We embrace cutting-edge technologies and creative solutions to drive growth.'
+      title: 'Launch Mentality',
+      description: 'Treat every day, campaign, or activation like a major product launch—attention to detail, excitement, and impact.'
+    },
+    {
+      icon: Users,
+      title: 'Results-Oriented',
+      description: 'Visibility, engagement, and sales growth are always the bottom line.'
+    },
+    {
+      icon: Eye,
+      title: 'Timeless Brand Building',
+      description: 'We build brands that audiences remember for years, turning visibility into influence and influence into growth.'
     }
   ];
 
@@ -99,19 +109,17 @@ const About = () => {
                   <h2 className="text-3xl font-bold text-[#333333]">Our Mission</h2>
                 </div>
                 <p className="text-lg text-[#666666] leading-relaxed">
-                  To empower businesses of all sizes with cutting-edge digital solutions that drive growth, 
-                  enhance efficiency, and create lasting competitive advantages in the digital marketplace.
+                  Turning marketing into unforgettable results and lasting impact worldwide. We craft strategic marketing that delivers measurable results while combining professionalism, creativity, and precision to build brands that audiences remember for years.
                 </p>
               </div>
-              
+
               <div>
                 <div className="flex items-center mb-4">
                   <Eye className="w-8 h-8 text-[#007BFF] mr-3" />
                   <h2 className="text-3xl font-bold text-[#333333]">Our Vision</h2>
                 </div>
                 <p className="text-lg text-[#666666] leading-relaxed">
-                  To be the leading global partner for digital transformation, recognized for our innovation, 
-                  expertise, and commitment to delivering exceptional results that transform businesses and industries.
+                  Helping brands thrive, inspire, and dominate globally. We turn visibility into influence, and influence into growth, creating timeless impact that transcends trends.
                 </p>
               </div>
             </div>
