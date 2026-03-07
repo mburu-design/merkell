@@ -46,9 +46,11 @@ const Footer = () => {
             {/* Logo & CTA Section */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                  <span className="text-[#000080] font-heading font-bold text-xl">M</span>
-                </div>
+                <img 
+                  src="/merkell-logo.svg" 
+                  alt="Merkell Group Logo" 
+                  className="h-12 w-auto"
+                />
                 <span className="font-heading text-2xl font-bold">Merkell Group</span>
               </div>
               
@@ -68,11 +70,11 @@ const Footer = () => {
               <div className="space-y-3 font-body">
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-[#DC3545]" />
-                  <span className="text-gray-300">0748 324 896 / 0113 528 252</span>
+                  <span className="text-gray-300">+254 118 642 918</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-[#DC3545]" />
-                  <span className="text-gray-300">merccykmwende@gmail.com</span>
+                  <span className="text-gray-300">merkellgroupconsulting@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-[#DC3545]" />
@@ -87,6 +89,7 @@ const Footer = () => {
               <nav className="space-y-3 font-body">
                 <Link to="/" onClick={scrollToTop} className="block text-gray-300 hover:text-[#DC3545] transition-colors">Home</Link>
                 <Link to="/about" onClick={scrollToTop} className="block text-gray-300 hover:text-[#DC3545] transition-colors">About Us</Link>
+                <Link to="/csr" onClick={scrollToTop} className="block text-gray-300 hover:text-[#DC3545] transition-colors">CSR</Link>
                 <Link to="/services" onClick={scrollToTop} className="block text-gray-300 hover:text-[#DC3545] transition-colors">Services</Link>
                 <Link to="/case-studies" onClick={scrollToTop} className="block text-gray-300 hover:text-[#DC3545] transition-colors">Case Studies</Link>
                 <Link to="/insights" onClick={scrollToTop} className="block text-gray-300 hover:text-[#DC3545] transition-colors">Insights</Link>
@@ -111,7 +114,7 @@ const Footer = () => {
           {/* Bottom Section */}
           <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="font-body text-gray-300 text-sm mb-4 md:mb-0">
-              © 2024 Merkell Group. All rights reserved.
+              © 2026 Merkell Group. All rights reserved.
             </p>
             
             {/* Social Media Icons */}

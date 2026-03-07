@@ -20,7 +20,6 @@ const CaseStudies = () => {
         '250% improvement in conversion rate',
         '60% reduction in cart abandonment'
       ],
-      duration: '4 months',
       technologies: ['Shopify', 'React', 'Google Analytics', 'Facebook Pixel'],
       challenge: 'The client had an outdated e-commerce platform with poor user experience and low conversion rates.',
       solution: 'We redesigned the entire platform with modern UX/UI principles and implemented advanced analytics.',
@@ -38,7 +37,6 @@ const CaseStudies = () => {
         '300% increase in website traffic',
         '150% improvement in brand awareness'
       ],
-      duration: '3 months',
       technologies: ['Google Ads', 'Facebook Ads', 'HubSpot', 'Google Analytics'],
       challenge: 'The startup needed to establish market presence and generate qualified leads quickly.',
       solution: 'We developed a comprehensive digital marketing strategy across multiple channels.',
@@ -56,7 +54,6 @@ const CaseStudies = () => {
         '180% improvement in page load speed',
         '90% increase in contact form submissions'
       ],
-      duration: '6 months',
       technologies: ['React', 'Node.js', 'AWS', 'MongoDB'],
       challenge: 'The existing website was outdated, slow, and not mobile-friendly.',
       solution: 'We built a modern, responsive website with optimized performance and user experience.',
@@ -74,7 +71,6 @@ const CaseStudies = () => {
         '180% growth in social media following',
         '120% increase in customer engagement'
       ],
-      duration: '5 months',
       technologies: ['Adobe Creative Suite', 'Figma', 'Social Media Platforms'],
       challenge: 'The client needed a complete brand overhaul to compete in the healthcare market.',
       solution: 'We developed a comprehensive brand identity and marketing strategy.',
@@ -92,7 +88,6 @@ const CaseStudies = () => {
         '24/7 customer support availability',
         '85% customer satisfaction rate'
       ],
-      duration: '3 months',
       technologies: ['OpenAI', 'Python', 'React', 'AWS Lambda'],
       challenge: 'High customer service costs and limited availability were impacting customer satisfaction.',
       solution: 'We implemented an AI-powered chatbot system with natural language processing.',
@@ -110,7 +105,6 @@ const CaseStudies = () => {
         '350% increase in organic traffic',
         '200% improvement in lead quality'
       ],
-      duration: '8 months',
       technologies: ['SEMrush', 'Google Search Console', 'WordPress', 'Google Analytics'],
       challenge: 'Poor search engine visibility was limiting the client\'s online presence.',
       solution: 'We developed a comprehensive SEO and content marketing strategy.',
@@ -226,12 +220,8 @@ const CaseStudies = () => {
                     ))}
                   </div>
                   
-                  <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                    <div className="flex items-center text-sm text-[#666666]">
-                      <Calendar className="w-4 h-4 mr-1" />
-                      {study.duration}
-                    </div>
-                    <button className="inline-flex items-center text-[#007BFF] font-medium hover:text-[#0056b3] transition-colors">
+                  <div className="pt-4 border-t border-gray-100">
+                    <button className="inline-flex items-center text-[#007BFF] font-medium hover:text-[#0056b3] transition-colors w-full justify-center">
                       View Details <ExternalLink className="w-4 h-4 ml-1" />
                     </button>
                   </div>

@@ -9,6 +9,7 @@ import Services from './pages/Services';
 import CaseStudies from './pages/CaseStudies';
 import Insights from './pages/Insights';
 import Contact from './pages/Contact';
+import CSR from './pages/CSR';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/insights" element={<Insights />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/csr" element={<CSR />} />
           </Routes>
         </main>
         <Footer />

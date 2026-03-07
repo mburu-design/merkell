@@ -104,7 +104,7 @@ const Home = () => {
 
   const faqs = [
     {
-      question: 'What makes Merkel Consulting different from other agencies?',
+      question: 'What makes Merkell Group different from other agencies?',
       answer: 'We combine strategic thinking with cutting-edge technology to deliver measurable results. Our team has extensive experience across multiple industries and we provide personalized solutions tailored to your specific business needs.'
     },
     {
@@ -112,12 +112,8 @@ const Home = () => {
       answer: 'Results vary depending on the service and your specific goals. For digital marketing campaigns, you can expect to see initial results within 30-60 days, while comprehensive digital transformations may take 3-6 months to show full impact.'
     },
     {
-      question: 'Do you work with businesses of all sizes?',
-      answer: 'Yes, we work with startups, small businesses, and large enterprises. Our solutions are scalable and can be customized to fit any budget and business size.'
-    },
-    {
-      question: 'What industries do you specialize in?',
-      answer: 'We have experience across various industries including technology, healthcare, retail, finance, and professional services. Our diverse expertise allows us to adapt our strategies to any sector.'
+      question: 'What businesses do we work with?',
+      answer: 'We focus on medium and large companies that are ready to scale and dominate their markets. Our solutions are designed for established businesses seeking strategic growth and lasting competitive advantage.'
     },
     {
       question: 'How do you measure success?',
@@ -136,16 +132,17 @@ const Home = () => {
         <div className="max-w-[90%] mx-auto">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ height: '80vh', minHeight: '500px' }}>
             {/* Video Background */}
-            <div className="absolute inset-0">
+            <div className="absolute inset-0 bg-[#000080]">
               <video 
                 autoPlay 
                 muted 
                 loop 
                 playsInline
+                preload="auto"
+                poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Crect fill='%23000080' width='1920' height='1080'/%3E%3C/svg%3E"
                 className="w-full h-full object-cover"
               >
                 <source src="/universeVideo.mp4" type="video/mp4" />
-                <div className="w-full h-full bg-[#000080]"></div>
               </video>
               <div className="absolute inset-0 bg-[#000080]/60"></div>
             </div>

@@ -35,20 +35,20 @@ const Contact = () => {
   const departments = [
     {
       title: 'General Inquiries',
-      email: 'merccykmwende@gmail.com',
-      phone: '0748 324 896',
+      email: 'merkellgroupconsulting@gmail.com',
+      phone: '+254 118 642 918',
       description: 'For general questions and information about our services.'
     },
     {
       title: 'Sales & Partnerships',
-      email: 'kmwendwa692@gmail.com',
-      phone: '0113 528 252',
+      email: 'merkellgroupconsulting@gmail.com',
+      phone: '+254 118 642 918',
       description: 'Ready to start a project or explore partnership opportunities.'
     },
     {
       title: 'Technical Support',
-      email: 'merccykmwende@gmail.com',
-      phone: '0748 324 896',
+      email: 'merkellgroupconsulting@gmail.com',
+      phone: '+254 118 642 918',
       description: 'Need help with an existing project or technical assistance.'
     }
   ];

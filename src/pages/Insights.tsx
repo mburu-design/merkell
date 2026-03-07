@@ -11,22 +11,22 @@ const Insights = () => {
   const articles = [
     {
       id: 1,
-      title: 'The Future of AI in Digital Marketing: Trends to Watch in 2024',
+      title: 'The Future of AI in Digital Marketing: Trends to Watch in 2026',
       excerpt: 'Discover how artificial intelligence is revolutionizing digital marketing strategies and what businesses need to know to stay competitive.',
       category: 'AI & Automation',
       author: 'Sarah Chen',
-      date: '2024-01-15',
+      date: '2026-02-15',
       readTime: '8 min read',
       image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['AI', 'Marketing', 'Automation', 'Trends']
     },
     {
       id: 2,
-      title: 'Complete Guide to SEO in 2024: Strategies That Actually Work',
+      title: 'Complete Guide to SEO in 2026: Strategies That Actually Work',
       excerpt: 'Learn the latest SEO techniques and best practices that will help your website rank higher in search engine results.',
       category: 'SEO',
       author: 'Michael Rodriguez',
-      date: '2024-01-12',
+      date: '2026-02-12',
       readTime: '12 min read',
       image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['SEO', 'Google', 'Rankings', 'Content']
@@ -37,18 +37,18 @@ const Insights = () => {
       excerpt: 'Explore the key design principles and psychological triggers that make landing pages convert visitors into customers.',
       category: 'Web Development',
       author: 'Emily Johnson',
-      date: '2024-01-10',
+      date: '2026-02-10',
       readTime: '6 min read',
       image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Design', 'Conversion', 'UX', 'Landing Pages']
     },
     {
       id: 4,
-      title: 'Social Media Marketing Trends: What\'s Working in 2024',
+      title: 'Social Media Marketing Trends: What\'s Working in 2026',
       excerpt: 'Stay ahead of the curve with the latest social media marketing trends and strategies that drive engagement and conversions.',
       category: 'Digital Marketing',
       author: 'David Thompson',
-      date: '2024-01-08',
+      date: '2026-02-08',
       readTime: '10 min read',
       image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Social Media', 'Marketing', 'Engagement', 'Strategy']
@@ -59,7 +59,7 @@ const Insights = () => {
       excerpt: 'Learn how to measure and maximize the return on investment from your digital transformation initiatives.',
       category: 'Business Strategy',
       author: 'Lisa Martinez',
-      date: '2024-01-05',
+      date: '2026-02-05',
       readTime: '9 min read',
       image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['ROI', 'Digital Transformation', 'Analytics', 'Business']
@@ -70,7 +70,7 @@ const Insights = () => {
       excerpt: 'Discover proven strategies to optimize your e-commerce website and increase conversion rates.',
       category: 'Web Development',
       author: 'Robert Kim',
-      date: '2024-01-03',
+      date: '2026-02-03',
       readTime: '7 min read',
       image: 'https://images.pexels.com/photos/3965545/pexels-photo-3965545.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['E-commerce', 'Conversion', 'Optimization', 'Sales']
@@ -81,7 +81,7 @@ const Insights = () => {
       excerpt: 'Master the art of content marketing with strategies that attract, engage, and convert your target audience.',
       category: 'Digital Marketing',
       author: 'Jennifer Wilson',
-      date: '2024-01-01',
+      date: '2026-02-01',
       readTime: '11 min read',
       image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Content Marketing', 'Strategy', 'Conversion', 'Audience']
@@ -92,7 +92,7 @@ const Insights = () => {
       excerpt: 'Learn how to optimize your content for voice search and stay ahead in the evolving search landscape.',
       category: 'SEO',
       author: 'Alex Chen',
-      date: '2023-12-28',
+      date: '2026-01-28',
       readTime: '8 min read',
       image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Voice Search', 'SEO', 'Future', 'Optimization']
@@ -103,7 +103,7 @@ const Insights = () => {
       excerpt: 'Discover how marketing automation can help you nurture leads and improve customer experience.',
       category: 'AI & Automation',
       author: 'Maria Garcia',
-      date: '2023-12-25',
+      date: '2026-01-25',
       readTime: '9 min read',
       image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Automation', 'Customer Journey', 'Lead Nurturing', 'CRM']

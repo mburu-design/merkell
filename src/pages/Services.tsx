@@ -9,14 +9,15 @@ import {
   Bot,
   ArrowRight,
   CheckCircle,
-  Star
+  Star,
+  Briefcase
 } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       icon: Globe,
-      title: 'Web Development & SEO',
+      title: 'Web Design & SEO',
       description: 'Custom websites optimized for search engines and user experience.',
       features: [
         'Responsive Web Design',
@@ -31,7 +32,7 @@ const Services = () => {
     },
     {
       icon: Smartphone,
-      title: 'Digital Marketing',
+      title: 'Digital Marketing Campaigns',
       description: 'Comprehensive digital strategies to grow your online presence.',
       features: [
         'Social Media Marketing',
@@ -61,8 +62,8 @@ const Services = () => {
     },
     {
       icon: Users,
-      title: 'Sales Training',
-      description: 'Professional training programs to boost your sales performance.',
+      title: 'Digital Marketing & Sales Training',
+      description: 'Professional training programs to boost your sales and marketing performance.',
       features: [
         'Sales Process Optimization',
         'Team Training Programs',
@@ -76,11 +77,11 @@ const Services = () => {
     },
     {
       icon: Palette,
-      title: 'Graphic Design & Video Editing',
-      description: 'Creative visual content that captures your brand essence.',
+      title: 'Graphics Design & Digital Billboards',
+      description: 'Creative visual content and digital billboard designs that capture attention.',
       features: [
         'Logo & Brand Design',
-        'Marketing Materials',
+        'Digital Billboard Creation',
         'Video Production',
         'Motion Graphics',
         'Social Media Graphics',
@@ -91,7 +92,7 @@ const Services = () => {
     },
     {
       icon: Bot,
-      title: 'Branding & AI Automations',
+      title: 'AI Automations & Branding',
       description: 'Modern branding solutions powered by AI technology.',
       features: [
         'Brand Strategy Development',
@@ -103,11 +104,26 @@ const Services = () => {
       ],
       color: 'bg-indigo-50 text-indigo-600',
       borderColor: 'border-indigo-200'
+    },
+    {
+      icon: Briefcase,
+      title: 'Business Development Advisory',
+      description: 'Strategic business consulting to drive growth and operational excellence.',
+      features: [
+        'Business Strategy Planning',
+        'Market Analysis & Research',
+        'Growth Strategy Development',
+        'Partnership Development',
+        'Operational Optimization',
+        'Financial Planning Support'
+      ],
+      color: 'bg-red-50 text-red-600',
+      borderColor: 'border-red-200'
     }
   ];
 
   const benefits = [
-    'Free initial consultation',
+    'Complimentary Strategic Growth Session',
     '24/7 customer support',
     'Dedicated project manager',
     'Regular progress reports',
@@ -117,24 +133,31 @@ const Services = () => {
 
   const testimonials = [
     {
-      name: 'David Thompson',
-      company: 'TechStart Solutions',
-      service: 'Web Development & SEO',
-      content: 'Our website traffic increased by 400% within 3 months of working with Merkel Consulting.',
+      name: 'Brian Ochwada',
+      title: 'Founder & CEO',
+      company: 'Ochwada Financial Services Agency',
+      content: 'The team delivered a clean, professional logo and letterhead that perfectly captures the trustworthy and modern feel we wanted for Ochwada Financial Services Agency. Excellent communication, quick revisions, and high-quality final product.',
       rating: 5
     },
     {
-      name: 'Lisa Martinez',
-      company: 'Fashion Forward',
-      service: 'Digital Marketing',
-      content: 'Their digital marketing strategies helped us reach a completely new audience and boost sales.',
+      name: 'David Thompson',
+      title: 'CEO',
+      company: 'Bonville Energy',
+      content: 'Merkell Group transformed our brand visibility completely. Their strategic approach and attention to detail helped us dominate our market. Every interaction felt like a major product launch.',
+      rating: 5
+    },
+    {
+      name: 'Lisa Wanjiru',
+      title: 'Fashion Designer',
+      company: 'Mila Honey & Peanut Butter',
+      content: 'Working with Merkell Group was exceptional. They turned our vision into reality with stunning graphics and digital billboards that truly capture attention. Professional, creative, and results-driven.',
       rating: 5
     },
     {
       name: 'Robert Kim',
-      company: 'Global Manufacturing',
-      service: 'Sales Training',
-      content: 'The sales training program transformed our team\'s performance. Revenue increased by 250%.',
+      title: 'Director',
+      company: 'Wisepaths Tax Consultants',
+      content: 'The digital marketing campaigns delivered unforgettable results. Our client engagement increased significantly, and the ROI exceeded all expectations. Merkell Group truly understands how to build lasting impact.',
       rating: 5
     }
   ];
@@ -153,7 +176,7 @@ const Services = () => {
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <div className="px-4 py-2 bg-[#DC3545] rounded-full">
-                <span className="font-body text-white font-medium">6 Core Services</span>
+                <span className="font-body text-white font-medium">7 Core Services</span>
               </div>
               <div className="px-4 py-2 bg-[#007BFF] rounded-full">
                 <span className="font-body text-white font-medium">500+ Projects</span>
@@ -283,31 +306,50 @@ const Services = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-[#F8F8F8]">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-6">
-              What Our Clients Say
-            </h2>
-            <p className="text-xl text-[#666666] max-w-3xl mx-auto">
-              Real results from real businesses that have transformed with our services.
+            <div className="inline-flex items-center space-x-3 mb-6">
+              <div className="text-6xl text-[#000080]">"</div>
+              <div className="px-8 py-3 bg-[#DC3545] rounded-full">
+                <span className="font-heading text-white font-bold text-xl">What The Merkell Pride Says...</span>
+              </div>
+            </div>
+            <p className="font-body text-xl text-[#666666] max-w-3xl mx-auto">
+              Real testimonials from real clients who experienced the Merkell difference.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="flex items-center mb-4">
+              <div key={index} className="relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                {/* Quote Icon */}
+                <div className="absolute top-6 left-6 text-6xl text-[#000080] opacity-20 font-serif">"</div>
+                
+                {/* Stars */}
+                <div className="flex items-center mb-6 relative z-10">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                    <Star key={i} className="w-6 h-6 text-[#DC3545] fill-current" />
                   ))}
                 </div>
-                <p className="text-[#666666] mb-6 italic">"{testimonial.content}"</p>
-                <div className="border-t border-gray-100 pt-4">
-                  <p className="font-semibold text-[#333333]">{testimonial.name}</p>
-                  <p className="text-[#666666] text-sm">{testimonial.company}</p>
-                  <p className="text-[#007BFF] text-sm font-medium">{testimonial.service}</p>
+                
+                {/* Content */}
+                <p className="font-body text-[#333333] text-lg mb-8 leading-relaxed relative z-10 italic">
+                  {testimonial.content}
+                </p>
+                
+                {/* Divider */}
+                <div className="border-t-2 border-gray-200 mb-6"></div>
+                
+                {/* Author Info */}
+                <div className="relative z-10">
+                  <p className="font-heading font-bold text-xl text-[#333333] mb-1">{testimonial.name},</p>
+                  <p className="font-body font-semibold text-[#666666] mb-1">{testimonial.title}</p>
+                  <p className="font-body text-[#666666]">{testimonial.company}</p>
                 </div>
+                
+                {/* Bottom Quote */}
+                <div className="absolute bottom-6 right-6 text-6xl text-[#000080] opacity-20 font-serif">"</div>
               </div>
             ))}
           </div>
