@@ -62,15 +62,15 @@ const Services = () => {
     },
     {
       icon: Users,
-      title: 'Digital Marketing & Sales Training',
-      description: 'Professional training programs to boost your sales and marketing performance.',
+      title: 'Trainings',
+      description: 'Comprehensive training programs in Sales, Digital Marketing, and PR & Communications.',
       features: [
-        'Sales Process Optimization',
-        'Team Training Programs',
-        'CRM Implementation',
-        'Lead Generation Strategies',
-        'Sales Funnel Development',
-        'Performance Analytics'
+        'Sales Training',
+        'Digital Marketing Training',
+        'Public Relations Strategy',
+        'Media Relations & Press Management',
+        'Corporate Communications',
+        'Team Development Programs'
       ],
       color: 'bg-orange-50 text-orange-600',
       borderColor: 'border-orange-200'
@@ -140,22 +140,22 @@ const Services = () => {
       rating: 5
     },
     {
-      name: 'David Thompson',
+      name: 'Bonnke Mulama',
       title: 'CEO',
-      company: 'Bonville Energy',
+      company: 'Bonville Energy Consultancy',
       content: 'Merkell Group transformed our brand visibility completely. Their strategic approach and attention to detail helped us dominate our market. Every interaction felt like a major product launch.',
       rating: 5
     },
     {
-      name: 'Lisa Wanjiru',
-      title: 'Fashion Designer',
-      company: 'Mila Honey & Peanut Butter',
+      name: 'Milka Njeri',
+      title: '',
+      company: 'Mila Honey and Peanut',
       content: 'Working with Merkell Group was exceptional. They turned our vision into reality with stunning graphics and digital billboards that truly capture attention. Professional, creative, and results-driven.',
       rating: 5
     },
     {
-      name: 'Robert Kim',
-      title: 'Director',
+      name: '',
+      title: '',
       company: 'Wisepaths Tax Consultants',
       content: 'The digital marketing campaigns delivered unforgettable results. Our client engagement increased significantly, and the ROI exceeded all expectations. Merkell Group truly understands how to build lasting impact.',
       rating: 5
@@ -343,8 +343,14 @@ const Services = () => {
                 
                 {/* Author Info */}
                 <div className="relative z-10">
-                  <p className="font-heading font-bold text-xl text-[#333333] mb-1">{testimonial.name},</p>
-                  <p className="font-body font-semibold text-[#666666] mb-1">{testimonial.title}</p>
+                  {testimonial.name && (
+                    <p className="font-heading font-bold text-xl text-[#333333] mb-1">
+                      {testimonial.name}{testimonial.title && ','}
+                    </p>
+                  )}
+                  {testimonial.title && (
+                    <p className="font-body font-semibold text-[#666666] mb-1">{testimonial.title}</p>
+                  )}
                   <p className="font-body text-[#666666]">{testimonial.company}</p>
                 </div>
                 

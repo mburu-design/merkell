@@ -9,10 +9,10 @@ import {
   Bot,
   ChevronDown,
   ChevronUp,
-  Play,
   Star,
   ArrowRight,
-  CheckCircle
+  CheckCircle,
+  Briefcase
 } from 'lucide-react';
 
 const Home = () => {
@@ -21,14 +21,14 @@ const Home = () => {
   const services = [
     {
       icon: Globe,
-      title: 'Web Development & SEO',
+      title: 'Web Design & SEO',
       description: 'Custom websites optimized for search engines and user experience.',
       color: 'bg-blue-50 text-blue-600',
       image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       icon: Smartphone,
-      title: 'Digital Marketing',
+      title: 'Digital Marketing Campaigns',
       description: 'Comprehensive digital strategies to grow your online presence.',
       color: 'bg-green-50 text-green-600',
       image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800'
@@ -42,24 +42,31 @@ const Home = () => {
     },
     {
       icon: Users,
-      title: 'Sales Training',
-      description: 'Professional training programs to boost your sales performance.',
+      title: 'Trainings',
+      description: 'Sales Training, Digital Marketing Training, PR and Communications.',
       color: 'bg-orange-50 text-orange-600',
       image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       icon: Palette,
-      title: 'Graphic Design & Video Editing',
-      description: 'Creative visual content that captures your brand essence.',
+      title: 'Graphics Design & Digital Billboards',
+      description: 'Creative visual content and digital billboard designs that capture attention.',
       color: 'bg-pink-50 text-pink-600',
       image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       icon: Bot,
-      title: 'Branding & AI Automations',
+      title: 'AI Automations & Branding',
       description: 'Modern branding solutions powered by AI technology.',
       color: 'bg-indigo-50 text-indigo-600',
       image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800'
+    },
+    {
+      icon: Briefcase,
+      title: 'Business Development Advisory',
+      description: 'Strategic business consulting to drive growth and operational excellence.',
+      color: 'bg-red-50 text-red-600',
+      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800'
     }
   ];
 
