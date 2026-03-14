@@ -106,15 +106,6 @@ const Header = () => {
                 About
               </Link>
               <Link 
-                to="/csr" 
-                onClick={scrollToTop}
-                className={`font-body text-sm font-bold uppercase tracking-wider transition-colors hover:text-[#007BFF] relative ${
-                  location.pathname === '/csr' ? 'text-[#DC3545] border-b-2 border-[#DC3545] pb-1' : 'text-black'
-                }`}
-              >
-                CSR
-              </Link>
-              <Link 
                 to="/case-studies" 
                 onClick={scrollToTop}
                 className={`font-body text-sm font-bold uppercase tracking-wider transition-colors hover:text-[#007BFF] relative ${
@@ -175,6 +166,15 @@ const Header = () => {
               >
                 Contact
               </Link>
+              <Link 
+                to="/csr" 
+                onClick={scrollToTop}
+                className={`font-body text-sm font-bold uppercase tracking-wider transition-colors hover:text-[#007BFF] relative ${
+                  location.pathname === '/csr' ? 'text-[#DC3545] border-b-2 border-[#DC3545] pb-1' : 'text-black'
+                }`}
+              >
+                CSR
+              </Link>
             </nav>
 
             {/* Call Us Button */}
@@ -204,11 +204,11 @@ const Header = () => {
               <nav className="px-4 py-4 space-y-4">
                 <Link to="/" onClick={scrollToTop} className="block text-black hover:text-[#007BFF] transition-colors font-bold">Home</Link>
                 <Link to="/about" onClick={scrollToTop} className="block text-black hover:text-[#007BFF] transition-colors font-bold">About</Link>
-                <Link to="/csr" onClick={scrollToTop} className="block text-black hover:text-[#007BFF] transition-colors font-bold">CSR</Link>
                 <Link to="/case-studies" onClick={scrollToTop} className="block text-black hover:text-[#007BFF] transition-colors font-bold">Case Studies</Link>
                 <Link to="/services" onClick={scrollToTop} className="block text-black hover:text-[#007BFF] transition-colors font-bold">Services</Link>
                 <Link to="/insights" onClick={scrollToTop} className="block text-black hover:text-[#007BFF] transition-colors font-bold">News & Insights</Link>
                 <Link to="/contact" onClick={scrollToTop} className="block text-black hover:text-[#007BFF] transition-colors font-bold">Contacts</Link>
+                <Link to="/csr" onClick={scrollToTop} className="block text-black hover:text-[#007BFF] transition-colors font-bold">CSR</Link>
                 
                 <div className="pt-4 border-t border-gray-100">
                   <Link 

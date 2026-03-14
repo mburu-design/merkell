@@ -122,7 +122,12 @@ const Home = () => {
   ];
 
   const clientLogos = [
-    'Bonville Energy', 'Wisepaths Tax Consultants', 'Mila Honey & Peanut Butter', 'Usahili Arts', 'Melina Business & Tax Consultants', 'Ochwada Financial Consultants'
+    { name: 'Bonville Energy', logo: '/companies_we_have_workedwith_logos/bonville-energy.svg' },
+    { name: 'Wisepaths Tax Consultants', logo: '/companies_we_have_workedwith_logos/wisepaths.svg' },
+    { name: 'Mila Honey & Peanut Butter', logo: '/companies_we_have_workedwith_logos/mila.svg' },
+    { name: 'Usahili Arts', logo: '/companies_we_have_workedwith_logos/usahili.svg' },
+    { name: 'Melina Business & Tax Consultants', logo: '/companies_we_have_workedwith_logos/melina.svg' },
+    { name: 'OFC', initials: true }
   ];
 
   return (
@@ -184,18 +189,60 @@ const Home = () => {
           <div className="relative overflow-hidden">
             <div className="flex animate-marquee whitespace-nowrap">
               {/* First set of logos */}
-              {clientLogos.map((logo, index) => (
+              {clientLogos.map((client, index) => (
                 <div key={`first-${index}`} className="mx-4 flex-shrink-0">
-                  <div className="h-20 px-6 bg-white rounded-lg shadow-md flex items-center justify-center border border-gray-200">
-                    <span className="text-[#666666] font-semibold text-sm whitespace-nowrap">{logo}</span>
+                  <div className="h-28 px-6 bg-white rounded-lg shadow-md flex flex-col items-center justify-center border border-gray-200 min-w-[200px]">
+                    {client.initials ? (
+                      <>
+                        <div className="w-14 h-14 bg-[#000080] rounded-full flex items-center justify-center mb-2">
+                          <span className="text-white font-heading font-bold text-xl">OFC</span>
+                        </div>
+                        <span className="text-[#666666] font-semibold text-xs text-center">Ochwada Financial Consultants</span>
+                      </>
+                    ) : (
+                      <>
+                        <img 
+                          src={client.logo} 
+                          alt={client.name}
+                          className="h-16 w-auto max-w-[160px] object-contain mb-2"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none';
+                            e.currentTarget.nextElementSibling!.classList.remove('text-xs');
+                            e.currentTarget.nextElementSibling!.classList.add('text-sm');
+                          }}
+                        />
+                        <span className="text-[#666666] font-semibold text-xs text-center whitespace-normal">{client.name}</span>
+                      </>
+                    )}
                   </div>
                 </div>
               ))}
               {/* Duplicate set for seamless loop */}
-              {clientLogos.map((logo, index) => (
+              {clientLogos.map((client, index) => (
                 <div key={`second-${index}`} className="mx-4 flex-shrink-0">
-                  <div className="h-20 px-6 bg-white rounded-lg shadow-md flex items-center justify-center border border-gray-200">
-                    <span className="text-[#666666] font-semibold text-sm whitespace-nowrap">{logo}</span>
+                  <div className="h-28 px-6 bg-white rounded-lg shadow-md flex flex-col items-center justify-center border border-gray-200 min-w-[200px]">
+                    {client.initials ? (
+                      <>
+                        <div className="w-14 h-14 bg-[#000080] rounded-full flex items-center justify-center mb-2">
+                          <span className="text-white font-heading font-bold text-xl">OFC</span>
+                        </div>
+                        <span className="text-[#666666] font-semibold text-xs text-center">Ochwada Financial Consultants</span>
+                      </>
+                    ) : (
+                      <>
+                        <img 
+                          src={client.logo} 
+                          alt={client.name}
+                          className="h-16 w-auto max-w-[160px] object-contain mb-2"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none';
+                            e.currentTarget.nextElementSibling!.classList.remove('text-xs');
+                            e.currentTarget.nextElementSibling!.classList.add('text-sm');
+                          }}
+                        />
+                        <span className="text-[#666666] font-semibold text-xs text-center whitespace-normal">{client.name}</span>
+                      </>
+                    )}
                   </div>
                 </div>
               ))}

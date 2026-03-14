@@ -41,10 +41,15 @@ const CSR = () => {
       <section className="relative py-32 bg-[#000080]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
-            <div className="inline-flex items-center space-x-3 mb-6 px-6 py-3 bg-[#DC3545] rounded-full">
-              <GraduationCap className="w-6 h-6" />
-              <span className="font-body text-white font-bold">Corporate Social Responsibility</span>
+            {/* RothMark Logo */}
+            <div className="flex justify-center mb-8">
+              <img 
+                src="/RothMark.svg" 
+                alt="RothMark Business School" 
+                className="h-24 md:h-32 lg:h-40 w-auto"
+              />
             </div>
+            
             <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6">
               RothMark Business School
             </h1>

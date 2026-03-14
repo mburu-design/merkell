@@ -70,7 +70,7 @@ const Footer = () => {
               <div className="space-y-3 font-body">
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-[#DC3545]" />
-                  <span className="text-gray-300">+254 118 642 918</span>
+                  <span className="text-gray-300">0728 439382</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-[#DC3545]" />
@@ -89,11 +89,11 @@ const Footer = () => {
               <nav className="space-y-3 font-body">
                 <Link to="/" onClick={scrollToTop} className="block text-gray-300 hover:text-[#DC3545] transition-colors">Home</Link>
                 <Link to="/about" onClick={scrollToTop} className="block text-gray-300 hover:text-[#DC3545] transition-colors">About Us</Link>
-                <Link to="/csr" onClick={scrollToTop} className="block text-gray-300 hover:text-[#DC3545] transition-colors">CSR</Link>
                 <Link to="/services" onClick={scrollToTop} className="block text-gray-300 hover:text-[#DC3545] transition-colors">Services</Link>
                 <Link to="/case-studies" onClick={scrollToTop} className="block text-gray-300 hover:text-[#DC3545] transition-colors">Case Studies</Link>
                 <Link to="/insights" onClick={scrollToTop} className="block text-gray-300 hover:text-[#DC3545] transition-colors">Insights</Link>
                 <Link to="/contact" onClick={scrollToTop} className="block text-gray-300 hover:text-[#DC3545] transition-colors">Contact</Link>
+                <Link to="/csr" onClick={scrollToTop} className="block text-gray-300 hover:text-[#DC3545] transition-colors">CSR</Link>
               </nav>
             </div>
 

@@ -36,19 +36,19 @@ const Contact = () => {
     {
       title: 'General Inquiries',
       email: 'merkellgroupconsulting@gmail.com',
-      phone: '+254 118 642 918',
+      phone: '0728 439382',
       description: 'For general questions and information about our services.'
     },
     {
       title: 'Sales & Partnerships',
       email: 'merkellgroupconsulting@gmail.com',
-      phone: '+254 118 642 918',
+      phone: '0728 439382',
       description: 'Ready to start a project or explore partnership opportunities.'
     },
     {
       title: 'Technical Support',
       email: 'merkellgroupconsulting@gmail.com',
-      phone: '+254 118 642 918',
+      phone: '0728 439382',
       description: 'Need help with an existing project or technical assistance.'
     }
   ];
